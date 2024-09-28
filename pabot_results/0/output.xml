@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.10.11 on win32)" generated="2024-09-23T19:39:41.328889" rpa="false" schemaversion="5">
+<suite id="s1" name="testDemo2" source="C:\Users\hp\PycharmProjects\RobotFrameworkTest\tests\testDemo2.robot">
+<test id="s1-t1" name="Validate Unssuccessful login" line="16">
+<kw name="open the browser with the mortage payment url" owner="resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-23T19:39:41.878312" level="INFO">Opening browser 'Edge' to base url 'http://rahulshettyacademy.com/loginpagePractise/'.</msg>
+<arg>${browserurl}</arg>
+<arg>Edge</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-23T19:39:41.877308" elapsed="8.226538"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-09-23T19:39:50.104844" elapsed="0.245845"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-23T19:39:52.376412" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-23T19:39:50.350689" elapsed="2.025723"/>
+</kw>
+<status status="PASS" start="2024-09-23T19:39:41.874297" elapsed="10.507697"/>
+</kw>
+<kw name="fill the login form">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-23T19:39:52.398578" level="INFO">Typing text 'saifeddine.k@gmail.com' into text field 'id:username'.</msg>
+<arg>id:username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T19:39:52.389582" elapsed="0.400871"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-23T19:39:52.792457" level="INFO">Typing text '123544' into text field 'id:password'.</msg>
+<arg>id:password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T19:39:52.791455" elapsed="0.102192"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-09-23T19:39:52.894658" level="INFO">Clicking button 'signInBtn'.</msg>
+<arg>signInBtn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T19:39:52.893647" elapsed="0.117827"/>
+</kw>
+<arg>${user_name}</arg>
+<arg>${invalid_password}</arg>
+<status status="PASS" start="2024-09-23T19:39:52.385990" elapsed="0.625484"/>
+</kw>
+<kw name="Wait until element to be visible">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-23T19:39:53.013475" elapsed="2.141156"/>
+</kw>
+<arg>${errorMsgLocator}</arg>
+<status status="PASS" start="2024-09-23T19:39:53.012473" elapsed="2.142158"/>
+</kw>
+<kw name="verify error message is correct">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-09-23T19:39:55.155631" level="INFO">Verifying element 'css:.alert-danger' contains exact text 'Incorrect username/password.'.</msg>
+<arg>${errorMsgLocator}</arg>
+<arg>${errorMessageLogin}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-09-23T19:39:55.154631" elapsed="0.109101"/>
+</kw>
+<status status="PASS" start="2024-09-23T19:39:55.154631" elapsed="0.109101"/>
+</kw>
+<kw name="Close Browser Session" owner="resources" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-09-23T19:39:55.264738" elapsed="2.440719"/>
+</kw>
+<status status="PASS" start="2024-09-23T19:39:55.263732" elapsed="2.442726"/>
+</kw>
+<status status="PASS" start="2024-09-23T19:39:41.870725" elapsed="15.835733"/>
+</test>
+<doc>Validate the login form</doc>
+<status status="PASS" start="2024-09-23T19:39:41.354021" elapsed="16.353431"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="testDemo2">testDemo2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,50 @@
+==============================================================================
+testDemo2 :: Validate the login form                                          
+==============================================================================
+Select the form and navigate to the child window                        
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\hp\PycharmProjects\RobotFrameworkTest\tests\testDemo2.robot:27
+    T:  Select the form and navigate to the child window    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\hp\PycharmProjects\RobotFrameworkTest\tests\testDemo2.robot:28
+      fill the login details and select user option    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\hp\PycharmProjects\RobotFrameworkTest\tests\testDemo2.robot:80
+      Click Button    id=okayBtn
+______________________________________________________________________________
+| FAIL |
+ElementClickInterceptedException: Message: element click intercepted: Element <button type="button" id="okayBtn" class="btn btn-success" autofocus="">...</button> is not clickable at point (46, 18). Other element would receive the click: <h3 class="text-center pt-5">...</h3>
+  (Session info: MicrosoftEdge=128.0.2739.79)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7E55B3A22+10594]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7E5550449+323337]
+	(No symbol) [0x00007FF7E536F16E]
+	(No symbol) [0x00007FF7E53BC94D]
+	(No symbol) [0x00007FF7E53BABFE]
+	(No symbol) [0x00007FF7E53B896A]
+	(No symbol) [0x00007FF7E53B7D7F]
+	(No symbol) [0x00007FF7E53AC613]
+	(No symbol) [0x00007FF7E53D7B7A]
+	(No symbol) [0x00007FF7E53ABEDD]
+	(No symbol) [0x00007FF7E53ABDAD]
+	(No symbol) [0x00007FF7E53D7E60]
+	(No symbol) [0x00007FF7E53ABEDD]
+    [ Message content over the limit has been removed. ]
+	(No symbol) [0x00007FF7E53AA8CD]
+	(No symbol) [0x00007FF7E53AAFB1]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF7E573E4C4+918756]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7E54DC9BF+54575]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7E54CF557+199]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF7E573D24D+914029]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7E5557ED1+354705]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7E5554384+339524]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7E55544B9+339833]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7E554AD7C+301116]
+	BaseThreadInitThunk [0x00007FFD79BC257D+29]
+	RtlUserThreadStart [0x00007FFD7AA8AF28+40]
+------------------------------------------------------------------------------
+testDemo2 :: Validate the login form                                  | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\hp\PycharmProjects\RobotFrameworkTest\tests\pabot_results\2\output.xml

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.10.11 on win32)" generated="2024-09-28T10:40:07.468602" rpa="false" schemaversion="5">
+<suite id="s1" name="testDemo2" source="C:\Users\hp\PycharmProjects\RobotFrameworkTest\tests\testDemo2.robot">
+<test id="s1-t1" name="Validate Unssuccessful login" line="16">
+<kw name="open the browser with the mortage payment url" owner="resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-28T10:40:07.908532" level="INFO">Opening browser 'Firefox' to base url 'http://rahulshettyacademy.com/loginpagePractise/'.</msg>
+<msg time="2024-09-28T10:40:10.821869" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<arg>${browserurl}</arg>
+<arg>${BrowserName}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2024-09-28T10:40:07.907095" elapsed="2.914774">Execution terminated by signal</status>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" start="2024-09-28T10:40:10.822879" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-09-28T10:40:10.822879" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-09-28T10:40:07.906096" elapsed="2.916783">Execution terminated by signal</status>
+</kw>
+<kw name="Close Browser Session" owner="resources" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-09-28T10:40:10.838860" elapsed="0.000996"/>
+</kw>
+<status status="PASS" start="2024-09-28T10:40:10.838860" elapsed="0.000996"/>
+</kw>
+<tag>SMOKE</tag>
+<status status="FAIL" start="2024-09-28T10:40:07.904071" elapsed="2.936131">Setup failed:
+Execution terminated by signal</status>
+</test>
+<test id="s1-t2" name="Validate Cards display in the Shopping Page" line="22">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2024-09-28T10:40:10.840984" elapsed="0.000000">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t3" name="Select the form and navigate to the child window" line="28">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2024-09-28T10:40:10.842010" elapsed="0.000988">Test execution stopped due to a fatal error.</status>
+</test>
+<doc>Validate the login form</doc>
+<status status="FAIL" start="2024-09-28T10:40:07.470592" elapsed="3.373412"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0" info="combined" combined="NOT robot:exit">NOT robot:exit</stat>
+<stat pass="0" fail="1" skip="0">SMOKE</stat>
+</tag>
+<suite>
+<stat pass="0" fail="3" skip="0" id="s1" name="testDemo2">testDemo2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
